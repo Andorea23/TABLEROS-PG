@@ -21,7 +21,7 @@ window.CONFIG = {
     {
       nombre: "Redención de Promociones",
       // "activo" = se puede abrir | "construccion" = se ve en gris con la etiqueta "En construcción"
-      estado: "construccion",
+      estado: "activo",
       link: "https://claude.ai/artifact/VPACRDV4pgWAE71KkoUrif",
       color: "azul",      // azul | verde | morado
       icono: "regalo",    // regalo | diana | trofeo

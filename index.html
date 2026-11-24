@@ -74,8 +74,9 @@ a.card:focus-visible{outline:3px solid var(--k);outline-offset:3px}
 .card.construccion .deco{opacity:.9;width:clamp(40px,3.6vw,58px);color:var(--azul)}
 
 /* Pie */
-.lema{display:flex;align-items:center;gap:18px;margin-top:auto;color:var(--azul-t);font-style:italic;font-weight:500;font-size:clamp(1.05rem,1.7vw,1.6rem)}
-.lema::after{content:"";flex:0 1 42%;height:1.5px;background:linear-gradient(90deg,var(--azul-t),rgba(20,88,196,0))}
+.lema{display:flex;align-items:center;gap:18px;margin-top:auto}
+.lema img{display:block;height:clamp(46px,7vh,72px);width:auto}
+.lema::after{content:"";flex:0 1 42%;height:1.5px;background:linear-gradient(90deg,#c62127,rgba(198,33,39,0))}
 .error{background:#fdeaea;color:#c02e2e;border:1px solid #f5c4c4;border-radius:10px;padding:12px 16px;font-size:.9rem}
 
 @media (max-width:1080px){.boards{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -112,7 +113,7 @@ a.card:focus-visible{outline:3px solid var(--k);outline-offset:3px}
 
   <main class="boards" id="boards"></main>
 
-  <p class="lema" id="lema">Trabajamos juntos para crecer</p>
+  <div class="lema" id="lema"><img src="img/logo-igen.png" alt="IGEN, Inteligencia comercial y estrategia de negocios"></div>
 </div>
 
 <script>
@@ -153,8 +154,6 @@ a.card:focus-visible{outline:3px solid var(--k);outline-offset:3px}
   const corte = texto.indexOf('. ');
   if (corte > 0) { d.append(el('b', null, texto.slice(0, corte + 1)), document.createTextNode(' ' + texto.slice(corte + 2))); }
   else d.textContent = texto;
-  if (C.lema === '') document.getElementById('lema').hidden = true;
-  else if (C.lema) document.getElementById('lema').textContent = C.lema;
 
   // Tarjetas
   for (const t of C.tableros) {

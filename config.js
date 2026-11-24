@@ -32,7 +32,7 @@ window.CONFIG = {
     {
       nombre: "Incentivos",
       estado: "activo",
-      link: "https://claude.ai/artifact/MjD4B3DkUAQThFQhcYdz1C",
+      link: "https://andorea23.github.io/INCENTIVOS_PG/",
       color: "verde",
       icono: "diana",
       descripcion: "Seguimiento del desempeño de los incentivos comerciales, evaluando el avance de sell out, cobertura y cumplimiento de cuotas por sucursal, jefe de ventas, supervisor y vendedor.",
